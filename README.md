@@ -1,16 +1,12 @@
-# Mountain Theme / Vim
-![image](https://github.com/pradyungn/Mountain/blob/master/vim/screenshot.png?raw=true)
+## Mountain for Neovim
+Alluring in its mystery and majesty. Mountain.
 
 ## Installation
-You may use any vim package manager of your choice. The below snippet uses junegunn's vim-plug package manager.
-
-``` vim-script
-Plug 'pradyungn/Mountain', {'rtp': 'vim'}
+For *Packer* users...
+```lua
+use 'mountain-theme/vim'
 ```
 
-## Statusline
-Mountain theme also comes with its own minimal statusline, pictured in the screenshot above. It can be enabled by setting the `g:enable_mountain_statusline` variable to `1` in your configuration.
-
-### Statusline Dependencies
-- WebDevIcons Vim Plugin
-- A Nerd Font in the Terminal
+<p align="center">
+<a href="https://github.com/mountain-theme/Mountain"><img src="https://img.shields.io/static/v1?label=Powered%20By&message=Mountain&color=9ec49f&style=for-the-badge&labelColor=0f0f0f"></a>
+</p>
