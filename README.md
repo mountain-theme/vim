@@ -1,5 +1,5 @@
 ## Mountain for Neovim
-Alluring in its mystery and majesty. Mountain.
+Enchanting in its mystique and majesty. Mountain.
 
 ## Installation
 For *Packer* users...
