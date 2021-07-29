@@ -1,26 +1,37 @@
 local mountain = {
-	m_1 = '#0f0f0f',
-	m_2 = '#191919',
-	m_3 = '#262626',
-	m_4 = '#f0f0f0',
-	m_5 = '#e7e7e7',
-	m_6 = '#ac8a8c',
-	m_7 = '#8f8aac',
-	m_8 = '#8aabac',
-	m_9 = '#aca98a',
-	m_10 = '#ac8aac',
 
-	bg = '#0f0f0f',
-	bg_alt = '#191919',
-	fg = '#f0f0f0',
-	text = '#f0f0f0',
-	comments = '#4c4c4c',
-	selection = '#262626',
-	active = '#8f8aac',
-	line_numbers = '#262626',
+	-- Grayscale 
+	yoru	= 	'#0f0f0f',
+	kesseki	= 	'#191919',
+	iwa		=	'#262626',
+	tetsu	=	'#393939',
+	amagumo	=	'#4c4c4c',
+	gin		=	'#767676',
+	okami	=	'#a0a0a0',
+	tsuki	=	'#bfbfbf',
+	fuyu	=	'#cacaca',
 
-	error = '#ac8a8c',
-	link = '#8aac8b',
+	-- Alphas
+	ume		=	'#8f8aac',
+	kosumosu =	'#ac8aac',
+	chikyu	=	'#aca98a',
+	kaen	=	'#ac8a8c',
+	aki		=	'#c6a679',
+	mizu	=	'#8aacab',
+	take	=	'#8aac8b',
+	shinkai	=	'#8a98ac',
+	usagi	=	'#e7e7e7',
 
-	none = 'NONE'
+	-- Accents
+	ajisai	=	'#a49ec4',
+	sakura	=	'#c49ec4',
+	suna	=	'#c4c19e',
+	ichigo	=	'#c49ea0',
+	yuyake	=	'#ceb188',
+	sora	=	'#93c3c4',
+	kusa	=	'#9ec49f',
+	kori	=	'#a5b4cb',
+	yuki	=	'#f0f0f0',
+
+	none	=	'NONE',
 }
