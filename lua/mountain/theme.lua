@@ -6,7 +6,7 @@ theme.loadSyntax = function ()
 
 	local syntax = {
 		Type =					{ fg = mountain.chikyu },
-		StorageClass =			{ fg = mountain.chikyu },
+		StorageClass =				{ fg = mountain.chikyu },
 		Structure =				{ fg = mountain.kosumosu },
 		Constant =				{ fg = mountain.aki },
 		String =				{ fg = mountain.take },
@@ -61,7 +61,8 @@ theme.loadSyntax = function ()
 
 theme.loadEditor = function ()
 	
-	local editor {
+
+	local editor = {
 		NormalFloat =			{ fg = mountain.yuki, bg = mountain.yoru },
 		ColorColumn =			{ fg = mountain.none, bg = mountain.kesseki },
 		Conceal =    			{ fg = mountain.kesseki },
@@ -150,7 +151,7 @@ theme.loadTreeSitter = function ()
 		TSConstMacro =			{ fg = mountain.ajisai },
 		TSError =				{ fg = mountain.kaen }, 
 		TSException =			{ fg = mountain.sakura },
-		TSField =				{ fg = mountain.gin },
+		TSField =				{ fg = mountain.suna },
 		TSFuncMacro =			{ fg = mountain.ajisai },
 		TSInclude =				{ fg = mountain.sora },
 		TSLabel =				{ fg = mountain.sakura },
@@ -174,7 +175,7 @@ theme.loadTreeSitter = function ()
 		TSEmphasis =			{ fg = mountain.ume },
 		TSUnderline =			{ fg = mountain.yuki, bg = mountain.none, style = 'underline' },
 		TSStrike =				{ },
-		TSTitle =				{ fg = ume, bg = mountain.none, style = 'bold' },
+		TSTitle =				{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
 		TSLiteral =				{ fg = mountain.yuki },
 		TSURI =					{ fg = mountain.take },
 	}
@@ -236,8 +237,8 @@ theme.loadPlugins = function()
 		TelescopePromptBorder =			{ fg = mountain.amagumo },
 		TelescopeResultsBorder =		{ fg = mountain.amagumo },
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
-		TelescopeSelectionCaret =		{ fg = mountain.nord9_gui },
-		TelescopeSelection =			{ fg = mountain.sakura },
+		TelescopeSelectionCaret =		{ fg = mountain.sakura },
+		TelescopeSelection =				{ fg = mountain.sakura },
 		TelescopeMatching =				{ fg = mountain.sora },
 		TelescopeNormal =				{ fg = mountain.yuki, bg = mountain.yoru },		
 
