@@ -60,6 +60,7 @@ theme.loadSyntax = function ()
 	end
 
 theme.loadEditor = function ()
+	
 	local = editor {
 		NormalFloat =			{ fg = mountain.yuki, bg = mountain.yoru },
 		ColorColumn =			{ fg = mountain.none, bg = mountain.kesseki },
@@ -108,3 +109,161 @@ theme.loadEditor = function ()
 		CursorColumn =			{ fg = mountain.none, bg = mountain.kesseki},
 		CursorLine =			{ fg = mountain.none, bg = mountain.kesseki},
 	}
+
+theme.loadTerminal = function ()
+
+	vim.g.terminal_color_0 = mountain.amagumo
+	vim.g.terminal_color_1 = mountain.kaen
+	vim.g.terminal_color_2 = mountain.take
+	vim.g.terminal_color_3 = mountain.chikyu
+	vim.g.terminal_color_4 = mountain.ume
+	vim.g.terminal_color_5 = mountain.kosumosu
+	vim.g.terminal_color_6 = mountain.mizu
+	vim.g.terminal_color_7 = mountain.yuki
+	vim.g.terminal_color_8 = mountain.iwa
+	vim.g.terminal_color_9 = mountain.ichigo
+	vim.g.terminal_color_10 = mountain.kusa
+	vim.g.terminal_color_11 = mountain.suna
+	vim.g.terminal_color_12 = mountain.ajisai
+	vim.g.terminal_color_13 = mountain.sakura
+	vim.g.terminal_color_14 = mountain.sora
+	vim.g.terminal_color_15 = mountain.usagi
+
+end
+
+theme.loadTreeSitter = function ()
+
+	local treesitter = {
+		TSAnnotation =			{ fg = mountain.suna },
+		TSCharacter =			{ fg = mountain.kusa },
+		TSConstructor =			{ fg = mountain.kori }
+		TSConstant =			{ fg = mountain.yuyake },
+		TSFloat =				{ fg = mountain.sakura },
+		TSNumber =				{ fg = mountain.sakura },
+		TSString =				{ fg = mountain.kusa },
+		TSAttribute =			{ fg = mountain.sakura },
+		TSBoolean =				{ fg = mountain.sora },
+		TSConstBuiltin =		{ fg = mountain.ajisai },
+		TSConstMacro =			{ fg = mountain.ajisai },
+		TSError =				{ fg = mountain.kaen }, 
+		TSException =			{ fg = mountain.sakura },
+		TSField =				{ fg = mountain.gin },
+		TSFuncMacro =			{ fg = mountain.ajisai },
+		TSInclude =				{ fg = mountain.sora },
+		TSLabel =				{ fg = mountain.sakura },
+		TSNamespace =			{ fg = mountain.gin},
+		TSOperator =			{ fg = mountain.kori },
+		TSParameter =			{ fg = mountain.suna },
+		TSParameterReference =	{ fg = mountain.suna },
+		TSProperty =			{ fg = mountain.suna },
+		TSPunctDelimiter =		{ fg = mountain.sora },
+		TSPunctBracket =		{ fg = mountain.sora },
+		TSPunctSpecial =		{ fg = mountain.sora },
+		TSStringRegex =			{ fg = mountain.ajisai },
+		TSStringEscape =		{ fg = mountain.kesseki },
+		TSSymbol =				{ fg = mountain.kosumosu },
+		TSType =				{ fg = mountain.shinkai},
+		TSTypeBuiltin =			{ fg = mountain.shinkai},
+		TSTag =					{ fg = mountain.mizu },
+		TSTagDelimiter =		{ fg = mountain.ume },
+		TSText =				{ fg = mountain.yuki },
+		TSTextReference =		{ fg = mountain.kosumosu },
+		TSEmphasis =			{ fg = mountain.ume },
+		TSUnderline =			{ fg = mountain.yuki, bg = mountain.none, style = 'underline' },
+		TSStrike =				{ },
+		TSTitle =				{ fg = ume, bg = mountain.none, style = 'bold' },
+		TSLiteral =				{ fg = mountain.yuki },
+		TSURI =					{ fg = mountain.take },
+	}
+
+	treesitter.TSComment=          { fg = mountain.amagumo }
+	treesitter.TSConditional =     { fg = mountain.shinkai }
+	treesitter.TSKeyword =         { fg = mountain.shinkai }
+	treesitter.TSRepeat =          { fg = mountain.shinkai }
+	treesitter.TSKeywordFunction = { fg = mountain.mizu }
+	treesitter.TSFunction =        { fg = mountain.mizu }
+	treesitter.TSMethod =          { fg = mountain.ume }
+	treesitter.TSFuncBuiltin =     { fg = mountain.mizu }
+	treesitter.TSVariable =        { fg = mountain.usagi }
+	treesitter.TSVariableBuiltin = { fg = mountian.usagi }
+
+	return treesitter
+
+end
+
+theme.loadLSP = function ()
+
+	local lsp = {
+
+		LspDiagnosticsDefaultError =			{ fg = mountain.kaen },
+		LspDiagnosticsSignError =				{ fg = mountain.kaen },
+		LspDiagnosticsFloatingError =			{ fg = mountain.kaen },
+		LspDiagnosticsVirtualTextError =		{ fg = mountain.kaen },
+		LspDiagnosticsUnderlineError =			{ style = 'undercurl', sp = mountain.kaen },
+		LspDiagnosticsDefaultWarning =			{ fg = mountain.sakura},
+		LspDiagnosticsSignWarning =				{ fg = mountain.sakura},
+		LspDiagnosticsFloatingWarning =			{ fg = mountain.sakura},
+		LspDiagnosticsVirtualTextWarning =		{ fg = mountain.sakura},
+		LspDiagnosticsUnderlineWarning =		{ style = 'undercurl', sp = mountain.sakura },
+		LspDiagnosticsDefaultInformation =		{ fg = mountain.suna },
+		LspDiagnosticsSignInformation =			{ fg = mountain.suna },
+
+		LspDiagnosticsFloatingInformation =		{ fg = mountain.ume },
+		LspDiagnosticsVirtualTextInformation =	{ fg = mountain.ume },
+		LspDiagnosticsUnderlineInformation =	{ style = 'undercurl', sp = mountain.ume },
+		LspDiagnosticsDefaultHint =				{ fg = mountain.shinkai  },
+		LspDiagnosticsSignHint =				{ fg = mountain.shinkai  },
+		LspDiagnosticsFloatingHint =			{ fg = mountain.shinkai  },
+		LspDiagnosticsVirtualTextHint =			{ fg = mountain.shinkai  },
+		LspDiagnosticsUnderlineHint =			{ style = 'undercurl', sp = mountain.ume },
+		LspReferenceText =						{ fg = mountain.yuki, bg = mountain.tsuki },
+		LspReferenceRead =						{ fg = mountain.yuki, bg = mountain.tsuki },
+		LspReferenceWrite =						{ fg = mountain.yuki, bg = mountain.tsuki },
+	}
+
+	return lsp
+
+end
+
+theme.loadPlugins = function()
+
+	local plugins = {
+
+		-- Telescope
+		TelescopePromptBorder =			{ fg = mountain.amagumo },
+		TelescopeResultsBorder =		{ fg = mountain.amagumo },
+		TelescopePreviewBorder =		{ fg = mountain.amagumo },
+		TelescopeSelectionCaret =		{ fg = mountain.nord9_gui },
+		TelescopeSelection 				{ fg = mountain.sakura },
+		TelescopeMatching =				{ fg = mountain.sora },
+		TelescopeNormal =				{ fg = mountain.yuki, bg = mountain.yoru },		
+
+		-- NvimTree
+		NvimTreeRootFolder =			{ fg = mountain.sora, style = "bold" },
+		NvimTreeGitDirty =				{ fg = mountain.sakura },
+		NvimTreeGitNew =				{ fg = mountain.kusa },
+		NvimTreeImageFile =				{ fg = mountain.sakura },
+		NvimTreeExecFile =				{ fg = mountain.kusa },
+		NvimTreeSpecialFile =			{ fg = mountain.kori , style = "underline" },
+		NvimTreeFolderName =			{ fg = mountain.suna },
+		NvimTreeEmptyFolderName =		{ fg = mountain.kesseki },
+		NvimTreeFolderIcon =			{ fg = mountain.gin },
+		NvimTreeIndentMarker =			{ fg  = mountain.kesseki },
+		LspDiagnosticsError =			{ fg = mountain.kaen },
+		LspDiagnosticsWarning =			{ fg = mountain.sakura },
+		LspDiagnosticsInformation =		{ fg = mountain.suna },
+		LspDiagnosticsHint =			{ fg = mountain.kori },
+
+		-- BufferLine
+		BufferLineIndicatorSelected =	{ fg = mountain.yoru },
+		BufferLineFill =				{ bg = mountain.yoru },
+
+		-- Indent Blankline
+		IndentBlanklineChar =			{ fg = mountain.amagumo },
+		IndentBlanklineContextChar =	{ fg = mountain.amagumo },
+	}
+
+	return plugins
+end
+
+return theme
