@@ -150,7 +150,7 @@ theme.loadTreeSitter = function ()
 		TSConstMacro =			{ fg = mountain.ajisai },
 		TSError =				{ fg = mountain.kaen }, 
 		TSException =			{ fg = mountain.sakura },
-		TSField =				{ fg = mountain.gin },
+		TSField =				{ fg = mountain.suna },
 		TSFuncMacro =			{ fg = mountain.ajisai },
 		TSInclude =				{ fg = mountain.sora },
 		TSLabel =				{ fg = mountain.sakura },
