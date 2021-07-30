@@ -6,7 +6,7 @@ theme.loadSyntax = function ()
 
 	local syntax = {
 		Type =					{ fg = mountain.chikyu },
-		StorageClass =			{ fg = mountan.chikyu },
+		StorageClass =			{ fg = mountain.chikyu },
 		Structure =				{ fg = mountain.kosumosu },
 		Constant =				{ fg = mountain.aki },
 		String =				{ fg = mountain.take },
@@ -78,7 +78,7 @@ theme.loadEditor = function ()
     	FoldColumn = 			{ fg = mountain.mizu },
 		IncSearch =  			{ fg = mountain.kesseki, bg = mountain.aki, style = 'reverse' },
     	LineNr =     			{ fg = mountain.amagumo },
-		CursorLineNr 			{ fg = mountain.kaen },
+		CursorLineNr =			{ fg = mountain.kaen },
 		MatchParen = 			{ fg = mountain.amagumo, bg = mountain.none, style = 'bold' },
 		ModeMsg =    			{ fg = mountain.take },
 		MoreMsg =    			{ fg = mountain.take },
@@ -88,12 +88,12 @@ theme.loadEditor = function ()
 		PmenuSbar =  			{ fg = mountain.yuki, bg = mountain.iwa },
 		PmenuThumb = 			{ fg = mountain.yuki, bg = mountain.gin },
 		Question =   			{ fg = mountain.ume },
-		QuickFixLine 			{ fg = mountain.kesseki, mountain.none, style = 'reverse' },
+		QuickFixLine =			{ fg = mountain.kesseki, mountain.none, style = 'reverse' },
 		qfLineNr =   			{ fg = mountain.none, mountain.amagumo, style = 'reverse' },
 		Search =     			{ fg = mountain.kesseki, bg = mountain.chikyu, style = 'reverse' },
 		SpecialKey = 			{ fg = mountain.amagumo },
 		SpellBad =   			{ fg = mountain.kaen, bg = mountain.none, style = 'italic,undercurl' },
-		SpellCap =				{ fg = moutain.ume, bg = mountain.none, style = 'italic,undercurl' },
+		SpellCap =				{ fg = mountain.ume, bg = mountain.none, style = 'italic,undercurl' },
 		SpellLocal =			{ fg = mountain.mizu, bg = mountain.none, style = 'italic,undercurl' },
 		SpellRare =				{ fg = mountain.kosumosu, bg = mountain.none, style = 'italic,undercurl' },
 		StatusLine =			{ fg = mountain.kaen, bg = mountain.iwa },
@@ -188,7 +188,7 @@ theme.loadTreeSitter = function ()
 	treesitter.TSMethod =          { fg = mountain.ume }
 	treesitter.TSFuncBuiltin =     { fg = mountain.mizu }
 	treesitter.TSVariable =        { fg = mountain.usagi }
-	treesitter.TSVariableBuiltin = { fg = mountian.usagi }
+	treesitter.TSVariableBuiltin = { fg = mountain.usagi }
 
 	return treesitter
 
@@ -237,7 +237,7 @@ theme.loadPlugins = function()
 		TelescopeResultsBorder =		{ fg = mountain.amagumo },
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
 		TelescopeSelectionCaret =		{ fg = mountain.nord9_gui },
-		TelescopeSelection 				{ fg = mountain.sakura },
+		TelescopeSelection =			{ fg = mountain.sakura },
 		TelescopeMatching =				{ fg = mountain.sora },
 		TelescopeNormal =				{ fg = mountain.yuki, bg = mountain.yoru },		
 
