@@ -61,6 +61,7 @@ theme.loadSyntax = function ()
 
 theme.loadEditor = function ()
 	
+
 	local editor = {
 		NormalFloat =			{ fg = mountain.yuki, bg = mountain.yoru },
 		ColorColumn =			{ fg = mountain.none, bg = mountain.kesseki },
@@ -112,7 +113,7 @@ theme.loadEditor = function ()
 
 	return editor
 end
-	
+
 theme.loadTerminal = function ()
 
 	vim.g.terminal_color_0 = mountain.amagumo
