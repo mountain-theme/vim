@@ -6,7 +6,7 @@ theme.loadSyntax = function ()
 
 	local syntax = {
 		Type =					{ fg = mountain.chikyu },
-		StorageClass =				{ fg = mountain.chikyu },
+		StorageClass =			{ fg = mountain.chikyu },
 		Structure =				{ fg = mountain.kosumosu },
 		Constant =				{ fg = mountain.aki },
 		String =				{ fg = mountain.take },
@@ -38,9 +38,9 @@ theme.loadSyntax = function ()
 
 		markdownCode =			{ fg = mountain.take },
 		markdownCodeBlock = 	{ fg = mountain.take },
-		markdownH1Delimiter = 	{ fg = mountain.kosumosu },
-		markdownH2Delimiter = 	{ fg = mountain.ume },
-		markdownH3Delimiter = 	{ fg = mountain.shinkai },
+		markdownH1Delimiter = 	{ fg = mountain.sora },
+		markdownH2Delimiter = 	{ fg = mountain.kori },
+		markdownH3Delimiter = 	{ fg = mountain.ajisai},
 		htmlLink =				{ fg = mountain.kusa, style = "underline" },
 		htmlH1 =				{ fg = mountain.sora, style = "bold" },
 		htmlH2 =				{ fg = mountain.kori, style = "bold" },
