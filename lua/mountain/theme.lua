@@ -85,7 +85,7 @@ theme.loadEditor = function ()
 		MoreMsg =    			{ fg = mountain.take },
 		NonText =    			{ fg = mountain.kesseki },
 		Pmenu =      			{ fg = mountain.yuki, bg = mountain.kesseki },
-		PmenuSel =   			{ fg = mountain.yuki, bg = mountain.kesseki },
+		PmenuSel =   			{ fg = mountain.yuki, bg = mountain.amagumo },
 		PmenuSbar =  			{ fg = mountain.yuki, bg = mountain.iwa },
 		PmenuThumb = 			{ fg = mountain.yuki, bg = mountain.gin },
 		Question =   			{ fg = mountain.ume },
