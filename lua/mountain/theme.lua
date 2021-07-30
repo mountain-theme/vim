@@ -45,7 +45,7 @@ theme.loadSyntax = function ()
     		markdownHeadingDelimiter = 	{ fg = mountain.yuyake, style = "bold" },
 		markdownH1= 			{ fg = mountain.sakura, style = "bold" },
 		markdownH2= 			{ fg = mountain.ajisai, style = "bold" },
-    		markdownLinkText = 		{ fg = c.ajisai, style = "underline" },
+    		markdownLinkText = 		{ fg = mountain.ajisai, style = "underline" },
 		htmlLink =			{ fg = mountain.kusa, style = "underline" },
 		htmlH1 =			{ fg = mountain.sakura, style = "bold" },
 		htmlH2 =			{ fg = mountain.ajisai, style = "bold" },
