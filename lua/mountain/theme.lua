@@ -61,7 +61,7 @@ theme.loadSyntax = function ()
 
 theme.loadEditor = function ()
 	
-	local = editor {
+	local editor {
 		NormalFloat =			{ fg = mountain.yuki, bg = mountain.yoru },
 		ColorColumn =			{ fg = mountain.none, bg = mountain.kesseki },
 		Conceal =    			{ fg = mountain.kesseki },
