@@ -188,7 +188,7 @@ theme.loadTreeSitter = function ()
 	treesitter.TSMethod =          { fg = mountain.ume }
 	treesitter.TSFuncBuiltin =     { fg = mountain.mizu }
 	treesitter.TSVariable =        { fg = mountain.usagi }
-	treesitter.TSVariableBuiltin = { fg = mountian.usagi }
+	treesitter.TSVariableBuiltin = { fg = mountain.usagi }
 
 	return treesitter
 
