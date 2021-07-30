@@ -6,7 +6,7 @@ theme.loadSyntax = function ()
 
 	local syntax = {
 		Type =					{ fg = mountain.chikyu },
-		StorageClass =			{ fg = mountan.chikyu },
+		StorageClass =				{ fg = mountan.chikyu },
 		Structure =				{ fg = mountain.kosumosu },
 		Constant =				{ fg = mountain.aki },
 		String =				{ fg = mountain.take },
