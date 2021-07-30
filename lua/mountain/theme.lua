@@ -174,7 +174,7 @@ theme.loadTreeSitter = function ()
 		TSEmphasis =			{ fg = mountain.ume },
 		TSUnderline =			{ fg = mountain.yuki, bg = mountain.none, style = 'underline' },
 		TSStrike =				{ },
-		TSTitle =				{ fg = ume, bg = mountain.none, style = 'bold' },
+		TSTitle =				{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
 		TSLiteral =				{ fg = mountain.yuki },
 		TSURI =					{ fg = mountain.take },
 	}
