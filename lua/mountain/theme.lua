@@ -81,7 +81,7 @@ theme.loadEditor = function ()
 		IncSearch =  			{ fg = mountain.aki, bg = mountain.kesseki, style = 'reverse' },
     		LineNr =     			{ fg = mountain.amagumo },
 		CursorLineNr =			{ fg = mountain.kaen },
-		MatchParen = 			{ fg = mountain.amagumo, bg = mountain.none, style = 'bold' },
+		MatchParen = 			{ fg = mountain.yuyake, bg = mountain.none, style = 'bold' },
 		ModeMsg =    			{ fg = mountain.take },
 		MoreMsg =    			{ fg = mountain.take },
 		NonText =    			{ fg = mountain.kesseki },
