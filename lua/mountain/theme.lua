@@ -136,7 +136,7 @@ theme.loadTreeSitter = function ()
 	local treesitter = {
 		TSAnnotation =			{ fg = mountain.suna },
 		TSCharacter =			{ fg = mountain.kusa },
-		TSConstructor =			{ fg = mountain.kori }
+		TSConstructor =			{ fg = mountain.kori },
 		TSConstant =			{ fg = mountain.yuyake },
 		TSFloat =				{ fg = mountain.sakura },
 		TSNumber =				{ fg = mountain.sakura },
