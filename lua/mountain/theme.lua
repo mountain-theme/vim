@@ -93,7 +93,7 @@ theme.loadEditor = function ()
 		Search =     			{ fg = mountain.kesseki, bg = mountain.chikyu, style = 'reverse' },
 		SpecialKey = 			{ fg = mountain.amagumo },
 		SpellBad =   			{ fg = mountain.kaen, bg = mountain.none, style = 'italic,undercurl' },
-		SpellCap =				{ fg = moutain.ume, bg = mountain.none, style = 'italic,undercurl' },
+		SpellCap =				{ fg = mountain.ume, bg = mountain.none, style = 'italic,undercurl' },
 		SpellLocal =			{ fg = mountain.mizu, bg = mountain.none, style = 'italic,undercurl' },
 		SpellRare =				{ fg = mountain.kosumosu, bg = mountain.none, style = 'italic,undercurl' },
 		StatusLine =			{ fg = mountain.kaen, bg = mountain.iwa },
