@@ -33,7 +33,7 @@ theme.loadSyntax = function ()
 		Underlined =			{ style = 'underline' },
 		Bold =				{ style = 'bold' },
 		Italic =			{ style = 'italic' },
-		Ignore =			{ fg = mountain.iwa},
+--		Ignore =			{ fg = mountain.iwa},
 		Error =				{ fg = mountain.kaen, style = 'bold,underline' },
 		Todo =				{ fg = mountain.none, bg = mountain.suna },
 		Conceal =			{ fg = mountain.iwa},
@@ -50,13 +50,15 @@ theme.loadSyntax = function ()
 		htmlH1 =			{ fg = mountain.sakura, style = "bold" },
 		htmlH2 =			{ fg = mountain.ajisai, style = "bold" },
 
+		-- Debug
+		debugPC = 			{ bg = mountain.iwa },
 	}
 		syntax.Comment =		{fg = mountain.amagumo}
 --		syntax.Conditional =		{fg = mountain.kosumosu}
 		syntax.Keyword =		{fg = mountain.sora}
 --		syntax.Repeat =			{fg = mountain.chikyu}
 		syntax.Function =		{fg = mountain.shinkai}
-		syntax.Identifier =		{fg = mountain.ajisai};
+		syntax.Identifier =		{fg = mountain.sakura};
 
 		return syntax
 	end
@@ -81,10 +83,12 @@ theme.loadEditor = function ()
 		EndOfBuffer =			{ fg = mountain.yoru },
 		VertSplit =			{ fg = mountain.iwa },
 		ErrorMsg =   			{ fg = mountain.kaen },
-		Folded =     			{ fg = mountain.ajisai, bg = mountain.iwa, style = 'italic' },
-	    	FoldColumn = 			{ fg = mountain.amagumo, bg = mountain.yoru },
+		Folded =     			{ fg = mountain.ume, bg = mountain.iwa, style = 'italic' },
+	    	FoldColumn = 			{ fg = mountain.amagumo, bg = mountain.iwa },
+	    	SignColumn = 			{ fg = mountain.amagumo, bg = mountain.iwa },
+	    	SignColumnSB = 			{ fg = mountain.gin, bg = mountain.amagumo },
 		Substitute =			{ fg = mountain.iwa, bg = mountain.kaen },
-		IncSearch =  			{ fg = mountain.aki, bg = mountain.kesseki, style = 'reverse' },
+		IncSearch =  			{ fg = mountain.aki, bg = mountain.none, style = 'reverse' },
     		LineNr =     			{ fg = mountain.amagumo },
 		CursorLineNr =			{ fg = mountain.okami },
 		MatchParen = 			{ fg = mountain.yuyake, bg = mountain.none, style = 'bold' },
@@ -100,7 +104,7 @@ theme.loadEditor = function ()
 		QuickFixLine =			{ bg = mountain.iwa, style = 'bold' },
 		qfLineNr =   			{ fg = mountain.gin, },
 		qfFileName =   			{ fg = mountain.ajisai, },
-		Search =     			{ fg = mountain.iwa, bg = mountain.kori },
+		Search =     			{ fg = mountain.yoru, bg = mountain.shinkai },
 		SpecialKey = 			{ fg = mountain.amagumo },
 		SpellBad =   			{ fg = mountain.kaen, bg = mountain.none, style = 'italic,undercurl' },
 		SpellCap =			{ fg = mountain.suna, bg = mountain.none, style = 'italic,undercurl' },
@@ -109,15 +113,16 @@ theme.loadEditor = function ()
 		StatusLine =			{ fg = mountain.kaen, bg = mountain.iwa },
 		StatusLineNC =			{ fg = mountain.amagumo, bg = mountain.kesseki },
 		Tabline =			{ fg = mountain.yuki, bg = mountain.amagumo },
-		TabLineFill =			{ fg = mountain.iwa },
+		TabLineFill =			{ fg = mountain.amagumo },
 		TablineSel =			{ fg = mountain.yoru, bg = mountain.sakura },
-		Title =				{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
-		Visual =			{ fg = mountain.none, bg = mountain.iwa },
+		Title =				{ fg = mountain.ajisai, style = 'bold' },
+		Visual =			{ fg = mountain.none, bg = mountain.amagumo },
 		VisualNOS =			{ fg = mountain.kaen, bg = mountain.none },
 		WarningMsg =			{ fg = mountain.yuyake },
-		WildMenu =			{ bg = mountain.iwa, style = 'bold' },
-		CursorColumn =			{ fg = mountain.none, bg = mountain.kesseki},
-		CursorLine =			{ fg = mountain.none, bg = mountain.kesseki},
+		Whitespace =			{ fg = mountain.amagumo },
+		WildMenu =			{ bg = mountain.iwa },
+		CursorColumn =			{ fg = mountain.none, bg = mountain.iwa},
+		CursorLine =			{ fg = mountain.none, bg = mountain.iwa},
 	}
 
 	return editor
@@ -200,7 +205,7 @@ theme.loadTreeSitter = function ()
 --	treesitter.TSFunction =        		{ fg = mountain.mizu }
 --	treesitter.TSMethod =          		{ fg = mountain.ume }
 --	treesitter.TSFuncBuiltin =     		{ fg = mountain.mizu }
-	treesitter.TSVariable =        		{ fg = mountain.usagi }
+	treesitter.TSVariable =        		{ fg = mountain.sakura }
 	treesitter.TSVariableBuiltin = 		{ fg = mountain.ichigo }
 
 	return treesitter
