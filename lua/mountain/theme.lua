@@ -194,7 +194,7 @@ theme.loadTreeSitter = function ()
 
 --	treesitter.TSComment=          		{ fg = mountain.amagumo }
 --	treesitter.TSConditional =    		{ fg = mountain.shinkai }
-	treesitter.TSKeyword =         		{ fg = mountain.kori }
+	treesitter.TSKeyword =         		{ fg = mountain.sakura }
 --	treesitter.TSRepeat =          		{ fg = mountain.shinkai }
 	treesitter.TSKeywordFunction = 		{ fg = mountain.sakura }
 --	treesitter.TSFunction =        		{ fg = mountain.mizu }
