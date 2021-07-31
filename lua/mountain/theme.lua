@@ -256,7 +256,7 @@ theme.loadPlugins = function()
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
 		TelescopeSelectionCaret =		{ fg = mountain.sakura },
 		TelescopeSelection =			{ fg = mountain.yoru, bg = mountain.sakura },
-		TelescopeMatching =			{ fg = mountain.kusa },
+		TelescopeMatching =			{ fg = mountain.yuki, bg = mountain.amagumo },
 		TelescopeNormal =			{ fg = mountain.yuki, bg = mountain.yoru },		
 
 		-- NvimTree
