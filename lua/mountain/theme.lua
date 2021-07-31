@@ -108,7 +108,7 @@ theme.loadEditor = function ()
 		SpellRare =			{ fg = mountain.sora, bg = mountain.none, style = 'italic,undercurl' },
 		StatusLine =			{ fg = mountain.kaen, bg = mountain.iwa },
 		StatusLineNC =			{ fg = mountain.amagumo, bg = mountain.kesseki },
-		Tabline =			{ fg = mountain.amagumo, bg = mountain.iwa },
+		Tabline =			{ fg = mountain.yuki, bg = mountain.amagumo },
 		TabLineFill =			{ fg = mountain.iwa },
 		TablineSel =			{ fg = mountain.yoru, bg = mountain.sakura },
 		Title =				{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
