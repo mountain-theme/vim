@@ -255,7 +255,7 @@ theme.loadPlugins = function()
 		TelescopeResultsBorder =		{ fg = mountain.amagumo },
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
 		TelescopeSelectionCaret =		{ fg = mountain.sakura },
-		TelescopeSelection =			{ fg = mountain.yoru, bg = mountain.sakura },
+		TelescopeSelection =			{ bg = mountain.amagumo },
 		TelescopeMatching =			{ fg = mountain.sakura },
 		TelescopeNormal =			{ fg = mountain.yuki, bg = mountain.yoru },		
 
