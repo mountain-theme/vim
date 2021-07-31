@@ -6,36 +6,36 @@ theme.loadSyntax = function ()
 
 	local syntax = {
 		Type =				{ fg = mountain.shinkai },
-		StorageClass =			{ fg = mountain.shinkai },
-		Structure =			{ fg = mountain.shinkai },
+--		StorageClass =			{ fg = mountain.shinkai },
+--		Structure =			{ fg = mountain.shinkai },
 		Constant =			{ fg = mountain.aki },
 		String =			{ fg = mountain.take },
 		Character =			{ fg = mountain.take },
-		Number =			{ fg = mountain.aki },
-		Boolean =			{ fg = mountain.aki },
-		Float =				{ fg = mountain.aki },
+--		Number =			{ fg = mountain.aki },
+--		Boolean =			{ fg = mountain.aki },
+--		Float =				{ fg = mountain.aki },
 		Statement =			{ fg = mountain.sakura },
 --		Label =				{ fg = mountain.chikyu },
 		Operator =			{ fg = mountain.mizu },
-		Exception =			{ fg = mountain.kaen },
+--		Exception =			{ fg = mountain.kaen },
 		PreProc =			{ fg = mountain.sora },
-		Include =			{ fg = mountain.sora },
-		Define =			{ fg = mountain.sora },
-		Macro =				{ fg = mountain.sora },
-		Typedef =			{ fg = mountain.shinkai },
-		PreCondit =			{ fg = mountain.sora },
+--		Include =			{ fg = mountain.sora },
+--		Define =			{ fg = mountain.sora },
+--		Macro =				{ fg = mountain.sora },
+--		Typedef =			{ fg = mountain.shinkai },
+--		PreCondit =			{ fg = mountain.sora },
 		Special =			{ fg = mountain.kori },
-		SpecialChar =			{ fg = mountain.kori },
-		Tag =				{ fg = mountain.kori },
-		Delimiter =			{ fg = mountain.kori },
-		SpecialComment =		{ fg = mountain.kori },
-		Debug =				{ fg = mountain.kori },
+--		SpecialChar =			{ fg = mountain.kori },
+--		Tag =				{ fg = mountain.kori },
+--		Delimiter =			{ fg = mountain.kori },
+--		SpecialComment =		{ fg = mountain.kori },
+--		Debug =				{ fg = mountain.kori },
 		Underlined =			{ style = 'underline' },
 		Bold =				{ style = 'bold' },
 		Italic =			{ style = 'italic' },
 		Ignore =			{ fg = mountain.iwa},
-		Error =				{ fg = mountain.kaen, bg = mountain.none, style = 'bold,underline' },
-		Todo =				{ fg = mountain.suna, bg = mountain.none, style = 'bold,italic' },
+		Error =				{ fg = mountain.kaen, style = 'bold,underline' },
+		Todo =				{ fg = mountain.none, bg = mountain.suna },
 		Conceal =			{ fg = mountain.iwa},
 
 		-- Markdown and HTML
@@ -52,9 +52,9 @@ theme.loadSyntax = function ()
 
 	}
 		syntax.Comment =		{fg = mountain.amagumo}
-		syntax.Conditional =		{fg = mountain.kosumosu}
+--		syntax.Conditional =		{fg = mountain.kosumosu}
 		syntax.Keyword =		{fg = mountain.sora}
-		syntax.Repeat =			{fg = mountain.chikyu}
+--		syntax.Repeat =			{fg = mountain.chikyu}
 		syntax.Function =		{fg = mountain.shinkai}
 		syntax.Identifier =		{fg = mountain.ajisai};
 
