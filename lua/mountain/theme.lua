@@ -42,7 +42,6 @@ theme.loadSyntax = function ()
 		markdownCodeDelimiter =		{ fg = mountain.amagumo },
 		markdownCode =			{ fg = mountain.take },
 		markdownCodeBlock = 		{ fg = mountain.take },
-    		markdownHeadingDelimiter = 	{ fg = mountain.yuyake, style = "bold" },
 		markdownH1= 			{ fg = mountain.sakura, style = "bold" },
 		markdownH2= 			{ fg = mountain.ajisai, style = "bold" },
     		markdownLinkText = 		{ fg = mountain.ajisai, style = "underline" },
