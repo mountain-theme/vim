@@ -1,6 +1,8 @@
 ## Mountain for Neovim
 Enchanting in its mystique and majesty. Mountain.
 
+> Check the legacy branch for the old vimscript plugin - we are currently undergoing a shift to  lua.
+
 ## Installation
 For *Packer* users...
 ```lua
