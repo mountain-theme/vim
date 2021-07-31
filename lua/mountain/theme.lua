@@ -18,7 +18,7 @@ theme.loadSyntax = function ()
 --		Label =				{ fg = mountain.chikyu },
 		Operator =			{ fg = mountain.mizu },
 --		Exception =			{ fg = mountain.kaen },
-		PreProc =			{ fg = mountain.sora },
+		PreProc =			{ fg = mountain.mizu },
 --		Include =			{ fg = mountain.sora },
 --		Define =			{ fg = mountain.sora },
 --		Macro =				{ fg = mountain.sora },
