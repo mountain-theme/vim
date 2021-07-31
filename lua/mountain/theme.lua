@@ -113,7 +113,7 @@ theme.loadEditor = function ()
 		StatusLine =			{ fg = mountain.kaen, bg = mountain.iwa },
 		StatusLineNC =			{ fg = mountain.amagumo, bg = mountain.kesseki },
 		Tabline =			{ fg = mountain.yuki, bg = mountain.amagumo },
-		TabLineFill =			{ fg = mountain.amagumo },
+		TabLineFill =			{ bg = mountain.amagumo },
 		TablineSel =			{ fg = mountain.yoru, bg = mountain.sakura },
 		Title =				{ fg = mountain.ajisai, style = 'bold' },
 		Visual =			{ fg = mountain.none, bg = mountain.amagumo },
@@ -256,7 +256,7 @@ theme.loadPlugins = function()
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
 		TelescopeSelectionCaret =		{ fg = mountain.sakura },
 		TelescopeSelection =			{ fg = mountain.sakura },
-		TelescopeMatching =			{ fg = mountain.sora },
+		TelescopeMatching =			{ fg = mountain.none, bg = mountain.sakura },
 		TelescopeNormal =			{ fg = mountain.yuki, bg = mountain.yoru },		
 
 		-- NvimTree
