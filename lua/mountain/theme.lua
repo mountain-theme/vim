@@ -35,7 +35,7 @@ theme.loadSyntax = function ()
 		Italic =			{ style = 'italic' },
 --		Ignore =			{ fg = mountain.iwa},
 		Error =				{ fg = mountain.kaen, style = 'bold,underline' },
-		Todo =				{ fg = mountain.none, bg = mountain.suna },
+		Todo =				{ fg = mountain.yoru, bg = mountain.suna },
 		Conceal =			{ fg = mountain.iwa},
 
 		-- Markdown and HTML
@@ -75,7 +75,7 @@ theme.loadEditor = function ()
 		Conceal =    			{ fg = mountain.iwa },
 		Cursor =     			{ fg = mountain.yuki, bg = mountain.none, style = 'reverse' },
 		CursorIM =   			{ fg = mountain.yuki, bg = mountain.none, style = 'reverse' },
-		Directory =  			{ fg = mountain.ajisai, bg = mountain.none },
+		Directory =  			{ fg = mountain.ajisai },
 		DiffAdd =    			{ fg = mountain.kusa, bg = mountain.none, style = 'reverse' },
 		DiffChange = 			{ fg = mountain.ajisai, bg = mountain.none, style = 'reverse' },
 		DiffDelete = 			{ fg = mountain.ichigo, bg = mountain.none, style = 'reverse' },
@@ -255,8 +255,8 @@ theme.loadPlugins = function()
 		TelescopeResultsBorder =		{ fg = mountain.amagumo },
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
 		TelescopeSelectionCaret =		{ fg = mountain.sakura },
-		TelescopeSelection =			{ fg = mountain.sakura },
-		TelescopeMatching =			{ fg = mountain.none, bg = mountain.sakura },
+		TelescopeSelection =			{ fg = mountain.yoru, bg = mountain.sakura },
+		TelescopeMatching =			{ fg = mountain.yoru, bg = mountain.sakura },
 		TelescopeNormal =			{ fg = mountain.yuki, bg = mountain.yoru },		
 
 		-- NvimTree
