@@ -5,56 +5,59 @@ local theme = {}
 theme.loadSyntax = function ()
 
 	local syntax = {
-		Type =					{ fg = mountain.chikyu },
-		StorageClass =			{ fg = mountain.chikyu },
-		Structure =				{ fg = mountain.kosumosu },
-		Constant =				{ fg = mountain.aki },
-		String =				{ fg = mountain.take },
-		Character =				{ fg = mountain.take },
-		Number =				{ fg = mountain.aki },
-		Boolean =				{ fg = mountain.aki },
-		Float =					{ fg = mountain.aki },
-		Statement =				{ fg = mountain.take },
-		Label =					{ fg = mountain.chikyu },
-		Operator =				{ fg = mountain.yuki },
-		Exception =				{ fg = mountain.kaen },
-		PreProc =				{ fg = mountain.chikyu },
-		Include =				{ fg = mountain.ume },
-		Define =				{ fg = mountain.kosumosu },
-		Macro =					{ fg = mountain.kosumosu },
-		Typedef =				{ fg = mountain.chikyu },
-		PreCondit =				{ fg = mountain.kosumosu },
-		Special =				{ fg = mountain.mizu },
-		SpecialChar =			{ fg = mountain.kaen },
-		Tag =					{ fg = mountain.chikyu },
-		Delimiter =				{ fg = mountain.kaen },
-		SpecialComment =		{ fg = mountain.amagumo },
-		Debug =					{ fg = mountain.kaen },
-		Underlined =			{ fg = mountain.link, bg = mountain.none, style = 'underline' },
-		Ignore =				{ fg = mountain.kesseki},
-		Error =					{ fg = mountain.kaen, bg = mountain.none, style = 'bold,underline' },
-		Todo =					{ fg = mountain.chikyu, bg = mountain.none, style = 'bold,italic' },
-		Conceal =				{ fg = mountain.none},
+		Type =				{ fg = mountain.shinkai },
+--		StorageClass =			{ fg = mountain.shinkai },
+--		Structure =			{ fg = mountain.shinkai },
+		Constant =			{ fg = mountain.aki },
+		String =			{ fg = mountain.take },
+		Character =			{ fg = mountain.take },
+--		Number =			{ fg = mountain.aki },
+--		Boolean =			{ fg = mountain.aki },
+--		Float =				{ fg = mountain.aki },
+		Statement =			{ fg = mountain.kosumosu },
+--		Label =				{ fg = mountain.chikyu },
+		Operator =			{ fg = mountain.mizu },
+--		Exception =			{ fg = mountain.kaen },
+		PreProc =			{ fg = mountain.mizu },
+--		Include =			{ fg = mountain.sora },
+--		Define =			{ fg = mountain.sora },
+--		Macro =				{ fg = mountain.sora },
+--		Typedef =			{ fg = mountain.shinkai },
+--		PreCondit =			{ fg = mountain.sora },
+		Special =			{ fg = mountain.kori },
+--		SpecialChar =			{ fg = mountain.kori },
+--		Tag =				{ fg = mountain.kori },
+--		Delimiter =			{ fg = mountain.kori },
+--		SpecialComment =		{ fg = mountain.kori },
+--		Debug =				{ fg = mountain.kori },
+		Underlined =			{ style = 'underline' },
+		Bold =				{ style = 'bold' },
+		Italic =			{ style = 'italic' },
+--		Ignore =			{ fg = mountain.iwa},
+		Error =				{ fg = mountain.kaen, style = 'bold,underline' },
+		Todo =				{ fg = mountain.yoru, bg = mountain.suna },
+		Conceal =			{ fg = mountain.iwa},
 
+		-- Markdown and HTML
+		markdownCodeDelimiter =		{ fg = mountain.amagumo },
 		markdownCode =			{ fg = mountain.take },
-		markdownCodeBlock = 	{ fg = mountain.take },
-		markdownH1Delimiter = 	{ fg = mountain.sora },
-		markdownH2Delimiter = 	{ fg = mountain.kori },
-		markdownH3Delimiter = 	{ fg = mountain.ajisai},
-		htmlLink =				{ fg = mountain.kusa, style = "underline" },
-		htmlH1 =				{ fg = mountain.sora, style = "bold" },
-		htmlH2 =				{ fg = mountain.kori, style = "bold" },
-		htmlH3 =				{ fg = mountain.ajisai, style = "bold" },
-		htmlH4 =				{ fg = mountain.sakura, style = "bold" },
-		htmlH5 =				{ fg = mountain.kusa, style = "bold" },
+		markdownCodeBlock = 		{ fg = mountain.take },
+		markdownH1= 			{ fg = mountain.sakura, style = "bold" },
+		markdownH2= 			{ fg = mountain.ajisai, style = "bold" },
+    		markdownLinkText = 		{ fg = mountain.ajisai, style = "underline" },
+		htmlLink =			{ fg = mountain.kusa, style = "underline" },
+		htmlH1 =			{ fg = mountain.sakura, style = "bold" },
+		htmlH2 =			{ fg = mountain.ajisai, style = "bold" },
 
+		-- Debug
+		debugPC = 			{ bg = mountain.iwa },
 	}
 		syntax.Comment =		{fg = mountain.amagumo}
-		syntax.Conditional =	{fg = mountain.kosumosu}
-		syntax.Keyword =		{fg = mountain.kosumosu}
-		syntax.Repeat =			{fg = mountain.chikyu}
-		syntax.Function =		{fg = mountain.ume}
-		syntax.Identifier =		{fg = mountain.kaen};
+--		syntax.Conditional =		{fg = mountain.kosumosu}
+		syntax.Keyword =		{fg = mountain.sora}
+--		syntax.Repeat =			{fg = mountain.chikyu}
+		syntax.Function =		{fg = mountain.shinkai}
+		syntax.Identifier =		{fg = mountain.sakura};
 
 		return syntax
 	end
@@ -63,52 +66,62 @@ theme.loadEditor = function ()
 	
 
 	local editor = {
+		Normal =			{ fg = mountain.yuki, bg = mountain.yoru },
+		NormalNC =			{ fg = mountain.yuki, bg = mountain.yoru },
 		NormalFloat =			{ fg = mountain.yuki, bg = mountain.yoru },
-		ColorColumn =			{ fg = mountain.none, bg = mountain.kesseki },
-		Conceal =    			{ fg = mountain.kesseki },
+		FloatBorder =			{ fg = mountain.yuki, bg = mountain.amagumo },
+		ColorColumn =			{ fg = mountain.none, bg = mountain.iwa },
+		Conceal =    			{ fg = mountain.iwa },
 		Cursor =     			{ fg = mountain.yuki, bg = mountain.none, style = 'reverse' },
 		CursorIM =   			{ fg = mountain.yuki, bg = mountain.none, style = 'reverse' },
-		Directory =  			{ fg = mountain.ume, bg = mountain.none },
-		DiffAdd =    			{ fg = mountain.take, bg = mountain.none, style = 'reverse' },
-		DiffChange = 			{ fg = mountain.amagumo, bg = mountain.none, style = 'reverse' },
-		DiffDelete = 			{ fg = mountain.kaen, bg = mountain.none, style = 'reverse' },
+		Directory =  			{ fg = mountain.ajisai },
+		DiffAdd =    			{ fg = mountain.kusa, bg = mountain.none, style = 'reverse' },
+		DiffChange = 			{ fg = mountain.ajisai, bg = mountain.none, style = 'reverse' },
+		DiffDelete = 			{ fg = mountain.ichigo, bg = mountain.none, style = 'reverse' },
 		DiffText =   			{ fg = mountain.ume, bg = mountain.none, style = 'reverse' },
-		EndOfBuffer =			{ fg = mountain.kesseki },
+		EndOfBuffer =			{ fg = mountain.yoru },
+		VertSplit =			{ fg = mountain.iwa },
 		ErrorMsg =   			{ fg = mountain.kaen },
-		Folded =     			{ fg = mountain.amagumo, mountain.none, style = 'italic' },
-    	FoldColumn = 			{ fg = mountain.mizu },
-		IncSearch =  			{ fg = mountain.kesseki, bg = mountain.aki, style = 'reverse' },
-    	LineNr =     			{ fg = mountain.amagumo },
-		CursorLineNr =			{ fg = mountain.kaen },
-		MatchParen = 			{ fg = mountain.amagumo, bg = mountain.none, style = 'bold' },
-		ModeMsg =    			{ fg = mountain.take },
-		MoreMsg =    			{ fg = mountain.take },
-		NonText =    			{ fg = mountain.kesseki },
-		Pmenu =      			{ fg = mountain.yuki, bg = mountain.kesseki },
-		PmenuSel =   			{ fg = mountain.yuki, bg = mountain.kesseki },
-		PmenuSbar =  			{ fg = mountain.yuki, bg = mountain.iwa },
-		PmenuThumb = 			{ fg = mountain.yuki, bg = mountain.gin },
+		Folded =     			{ fg = mountain.ume, bg = mountain.iwa, style = 'italic' },
+	    	FoldColumn = 			{ fg = mountain.amagumo, bg = mountain.iwa },
+	    	SignColumn = 			{ fg = mountain.amagumo, bg = mountain.iwa },
+	    	SignColumnSB = 			{ fg = mountain.gin, bg = mountain.amagumo },
+		Substitute =			{ fg = mountain.iwa, bg = mountain.kaen },
+		IncSearch =  			{ fg = mountain.aki, bg = mountain.none, style = 'reverse' },
+    		LineNr =     			{ fg = mountain.amagumo },
+		CursorLineNr =			{ fg = mountain.okami },
+		MatchParen = 			{ fg = mountain.yuyake, bg = mountain.none, style = 'bold' },
+		ModeMsg =    			{ fg = mountain.okami, style = 'bold' },
+		MoreMsg =    			{ fg = mountain.ume },
+		MsgArea =    			{ fg = mountain.okami },
+		NonText =    			{ fg = mountain.iwa },
+		Pmenu =      			{ fg = mountain.yuki, bg = mountain.iwa },
+		PmenuSel =   			{ fg = mountain.yoru, bg = mountain.sakura },
+		PmenuSbar =  			{ fg = mountain.yuki, bg = mountain.tetsu },
+		PmenuThumb = 			{ fg = mountain.yuki, bg = mountain.amagumo },
 		Question =   			{ fg = mountain.ume },
-		QuickFixLine =			{ fg = mountain.kesseki, mountain.none, style = 'reverse' },
-		qfLineNr =   			{ fg = mountain.none, mountain.amagumo, style = 'reverse' },
-		Search =     			{ fg = mountain.kesseki, bg = mountain.chikyu, style = 'reverse' },
+		QuickFixLine =			{ bg = mountain.iwa, style = 'bold' },
+		qfLineNr =   			{ fg = mountain.gin, },
+		qfFileName =   			{ fg = mountain.ajisai, },
+		Search =     			{ fg = mountain.yoru, bg = mountain.shinkai },
 		SpecialKey = 			{ fg = mountain.amagumo },
-		SpellBad =   			{ fg = mountain.kaen, bg = mountain.none, style = 'italic,undercurl' },
-		SpellCap =				{ fg = mountain.ume, bg = mountain.none, style = 'italic,undercurl' },
-		SpellLocal =			{ fg = mountain.mizu, bg = mountain.none, style = 'italic,undercurl' },
-		SpellRare =				{ fg = mountain.kosumosu, bg = mountain.none, style = 'italic,undercurl' },
+		SpellBad =   			{ sp = mountain.kaen, style = 'undercurl' },
+		SpellCap =			{ sp = mountain.suna, style = 'undercurl' },
+		SpellLocal =			{ sp = mountain.shinkai, style = 'undercurl' },
+		SpellRare =			{ sp = mountain.sora, style = 'undercurl' },
 		StatusLine =			{ fg = mountain.kaen, bg = mountain.iwa },
 		StatusLineNC =			{ fg = mountain.amagumo, bg = mountain.kesseki },
-		Tabline =				{ fg = mountain.amagumo },
-		TabLineFill =			{ fg = mountain.amagumo },
-		TablineSel =			{ fg = mountain.take, bg = mountain.kesseki },
-		Title =					{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
-		Visual =				{ fg = mountain.none, bg = mountain.iwa },
-		VisualNOS =				{ fg = mountain.kaen, bg = mountain.none },
-		WarningMsg =			{ fg = mountain.kaen },
-		WildMenu =				{ fg = mountain.kaen, bg = mountain.none, style = 'bold' },
-		CursorColumn =			{ fg = mountain.none, bg = mountain.kesseki},
-		CursorLine =			{ fg = mountain.none, bg = mountain.kesseki},
+		Tabline =			{ fg = mountain.yuki, bg = mountain.amagumo },
+		TabLineFill =			{ bg = mountain.amagumo },
+		TablineSel =			{ fg = mountain.yoru, bg = mountain.sakura },
+		Title =				{ fg = mountain.ajisai, style = 'bold' },
+		Visual =			{ fg = mountain.none, bg = mountain.iwa },
+		VisualNOS =			{ fg = mountain.kaen, bg = mountain.none },
+		WarningMsg =			{ fg = mountain.yuyake },
+		Whitespace =			{ fg = mountain.amagumo },
+		WildMenu =			{ bg = mountain.iwa },
+		CursorColumn =			{ fg = mountain.none, bg = mountain.iwa},
+		CursorLine =			{ fg = mountain.none, bg = mountain.iwa},
 	}
 
 	return editor
@@ -138,58 +151,61 @@ end
 theme.loadTreeSitter = function ()
 
 	local treesitter = {
-		TSAnnotation =			{ fg = mountain.suna },
-		TSCharacter =			{ fg = mountain.kusa },
-		TSConstructor =			{ fg = mountain.kori },
-		TSConstant =			{ fg = mountain.yuyake },
-		TSFloat =				{ fg = mountain.sakura },
-		TSNumber =				{ fg = mountain.sakura },
-		TSString =				{ fg = mountain.kusa },
-		TSAttribute =			{ fg = mountain.sakura },
-		TSBoolean =				{ fg = mountain.sora },
-		TSConstBuiltin =		{ fg = mountain.ajisai },
-		TSConstMacro =			{ fg = mountain.ajisai },
-		TSError =				{ fg = mountain.kaen }, 
-		TSException =			{ fg = mountain.sakura },
-		TSField =				{ fg = mountain.suna },
-		TSFuncMacro =			{ fg = mountain.ajisai },
-		TSInclude =				{ fg = mountain.sora },
-		TSLabel =				{ fg = mountain.sakura },
-		TSNamespace =			{ fg = mountain.gin},
-		TSOperator =			{ fg = mountain.kori },
+		TSNote =			{ fg = mountain.yoru, bg = mountain.sora },
+		TSWarning =			{ fg = mountain.yoru, bg = mountain.yuyake },
+		TSDanger =			{ fg = mountain.yoru, bg = mountain.ichigo },
+--		TSAnnotation =			{ fg = mountain.suna },
+--		TSCharacter =			{ fg = mountain.kusa },
+		TSConstructor =			{ fg = mountain.sakura },
+--		TSConstant =			{ fg = mountain.yuyake },
+--		TSFloat =			{ fg = mountain.sakura },
+--		TSNumber =			{ fg = mountain.sakura },
+--		TSString =			{ fg = mountain.kusa },
+--		TSAttribute =			{ fg = mountain.sakura },
+--		TSBoolean =			{ fg = mountain.sora },
+--		TSConstBuiltin =		{ fg = mountain.ajisai },
+--		TSConstMacro =			{ fg = mountain.ajisai },
+--		TSError =			{ fg = mountain.kaen }, 
+--		TSException =			{ fg = mountain.sakura },
+		TSField =			{ fg = mountain.sora },
+--		TSFuncMacro =			{ fg = mountain.ajisai },
+--		TSInclude =			{ fg = mountain.sora },
+		TSLabel =			{ fg = mountain.ajisai },
+--		TSNamespace =			{ fg = mountain.gin},
+		TSOperator =			{ fg = mountain.sora },
 		TSParameter =			{ fg = mountain.suna },
-		TSParameterReference =	{ fg = mountain.suna },
-		TSProperty =			{ fg = mountain.suna },
+--		TSParameterReference =		{ fg = mountain.suna },
+		TSProperty =			{ fg = mountain.sora },
 		TSPunctDelimiter =		{ fg = mountain.sora },
-		TSPunctBracket =		{ fg = mountain.sora },
+		TSPunctBracket =		{ fg = mountain.okami },
 		TSPunctSpecial =		{ fg = mountain.sora },
 		TSStringRegex =			{ fg = mountain.ajisai },
-		TSStringEscape =		{ fg = mountain.kesseki },
-		TSSymbol =				{ fg = mountain.kosumosu },
-		TSType =				{ fg = mountain.shinkai},
-		TSTypeBuiltin =			{ fg = mountain.shinkai},
-		TSTag =					{ fg = mountain.mizu },
-		TSTagDelimiter =		{ fg = mountain.ume },
-		TSText =				{ fg = mountain.yuki },
-		TSTextReference =		{ fg = mountain.kosumosu },
-		TSEmphasis =			{ fg = mountain.ume },
-		TSUnderline =			{ fg = mountain.yuki, bg = mountain.none, style = 'underline' },
-		TSStrike =				{ },
-		TSTitle =				{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
-		TSLiteral =				{ fg = mountain.yuki },
-		TSURI =					{ fg = mountain.take },
+		TSStringEscape =		{ fg = mountain.sakura },
+--		TSSymbol =			{ fg = mountain.kosumosu },
+--		TSType =			{ fg = mountain.shinkai},
+--		TSTypeBuiltin =			{ fg = mountain.shinkai},
+--		TSTag =				{ fg = mountain.mizu },
+--		TSTagDelimiter =		{ fg = mountain.ume },
+--		TSText =			{ fg = mountain.yuki },
+		TSTextReference =		{ fg = mountain.kusa },
+--		TSEmphasis =			{ fg = mountain.ume },
+--		TSUnderline =			{ fg = mountain.yuki, bg = mountain.none, style = 'underline' },
+--		TSStrike =			{ },
+--		TSTitle =			{ fg = mountain.ume, bg = mountain.none, style = 'bold' },
+--		TSLiteral =			{ fg = mountain.yuki },
+--		TSURI =				{ fg = mountain.take },
 	}
 
-	treesitter.TSComment=          { fg = mountain.amagumo }
-	treesitter.TSConditional =     { fg = mountain.shinkai }
-	treesitter.TSKeyword =         { fg = mountain.shinkai }
-	treesitter.TSRepeat =          { fg = mountain.shinkai }
-	treesitter.TSKeywordFunction = { fg = mountain.mizu }
-	treesitter.TSFunction =        { fg = mountain.mizu }
-	treesitter.TSMethod =          { fg = mountain.ume }
-	treesitter.TSFuncBuiltin =     { fg = mountain.mizu }
-	treesitter.TSVariable =        { fg = mountain.usagi }
-	treesitter.TSVariableBuiltin = { fg = mountain.usagi }
+--	treesitter.TSComment=          		{ fg = mountain.amagumo }
+--	treesitter.TSConditional =    		{ fg = mountain.shinkai }
+	treesitter.TSKeyword =         		{ fg = mountain.sakura }
+--	treesitter.TSRepeat =          		{ fg = mountain.shinkai }
+	treesitter.TSKeywordFunction = 		{ fg = mountain.sakura }
+--	treesitter.TSFunction =        		{ fg = mountain.mizu }
+--	treesitter.TSMethod =          		{ fg = mountain.ume }
+--	treesitter.TSFuncBuiltin =     		{ fg = mountain.mizu }
+	treesitter.TSVariable =        		{ fg = mountain.yuki }
+	treesitter.TSVariableBuiltin = 		{ fg = mountain.ichigo }
 
 	return treesitter
 
@@ -200,12 +216,12 @@ theme.loadLSP = function ()
 	local lsp = {
 
 		LspDiagnosticsDefaultError =			{ fg = mountain.kaen },
-		LspDiagnosticsSignError =				{ fg = mountain.kaen },
+		LspDiagnosticsSignError =			{ fg = mountain.kaen },
 		LspDiagnosticsFloatingError =			{ fg = mountain.kaen },
 		LspDiagnosticsVirtualTextError =		{ fg = mountain.kaen },
 		LspDiagnosticsUnderlineError =			{ style = 'undercurl', sp = mountain.kaen },
 		LspDiagnosticsDefaultWarning =			{ fg = mountain.sakura},
-		LspDiagnosticsSignWarning =				{ fg = mountain.sakura},
+		LspDiagnosticsSignWarning =			{ fg = mountain.sakura},
 		LspDiagnosticsFloatingWarning =			{ fg = mountain.sakura},
 		LspDiagnosticsVirtualTextWarning =		{ fg = mountain.sakura},
 		LspDiagnosticsUnderlineWarning =		{ style = 'undercurl', sp = mountain.sakura },
@@ -213,16 +229,16 @@ theme.loadLSP = function ()
 		LspDiagnosticsSignInformation =			{ fg = mountain.suna },
 
 		LspDiagnosticsFloatingInformation =		{ fg = mountain.ume },
-		LspDiagnosticsVirtualTextInformation =	{ fg = mountain.ume },
-		LspDiagnosticsUnderlineInformation =	{ style = 'undercurl', sp = mountain.ume },
-		LspDiagnosticsDefaultHint =				{ fg = mountain.shinkai  },
-		LspDiagnosticsSignHint =				{ fg = mountain.shinkai  },
+		LspDiagnosticsVirtualTextInformation =		{ fg = mountain.ume },
+		LspDiagnosticsUnderlineInformation =		{ style = 'undercurl', sp = mountain.ume },
+		LspDiagnosticsDefaultHint =			{ fg = mountain.shinkai  },
+		LspDiagnosticsSignHint =			{ fg = mountain.shinkai  },
 		LspDiagnosticsFloatingHint =			{ fg = mountain.shinkai  },
 		LspDiagnosticsVirtualTextHint =			{ fg = mountain.shinkai  },
 		LspDiagnosticsUnderlineHint =			{ style = 'undercurl', sp = mountain.ume },
-		LspReferenceText =						{ fg = mountain.yuki, bg = mountain.tsuki },
-		LspReferenceRead =						{ fg = mountain.yuki, bg = mountain.tsuki },
-		LspReferenceWrite =						{ fg = mountain.yuki, bg = mountain.tsuki },
+		LspReferenceText =				{ fg = mountain.yuki, bg = mountain.tsuki },
+		LspReferenceRead =				{ fg = mountain.yuki, bg = mountain.tsuki },
+		LspReferenceWrite =				{ fg = mountain.yuki, bg = mountain.tsuki },
 	}
 
 	return lsp
@@ -238,16 +254,16 @@ theme.loadPlugins = function()
 		TelescopeResultsBorder =		{ fg = mountain.amagumo },
 		TelescopePreviewBorder =		{ fg = mountain.amagumo },
 		TelescopeSelectionCaret =		{ fg = mountain.sakura },
-		TelescopeSelection =				{ fg = mountain.sakura },
-		TelescopeMatching =				{ fg = mountain.sora },
-		TelescopeNormal =				{ fg = mountain.yuki, bg = mountain.yoru },		
+		TelescopeSelection =			{ bg = mountain.amagumo },
+		TelescopeMatching =			{ fg = mountain.sakura },
+		TelescopeNormal =			{ fg = mountain.yuki, bg = mountain.yoru },		
 
 		-- NvimTree
 		NvimTreeRootFolder =			{ fg = mountain.sora, style = "bold" },
-		NvimTreeGitDirty =				{ fg = mountain.sakura },
-		NvimTreeGitNew =				{ fg = mountain.kusa },
-		NvimTreeImageFile =				{ fg = mountain.sakura },
-		NvimTreeExecFile =				{ fg = mountain.kusa },
+		NvimTreeGitDirty =			{ fg = mountain.sakura },
+		NvimTreeGitNew =			{ fg = mountain.kusa },
+		NvimTreeImageFile =			{ fg = mountain.sakura },
+		NvimTreeExecFile =			{ fg = mountain.kusa },
 		NvimTreeSpecialFile =			{ fg = mountain.kori , style = "underline" },
 		NvimTreeFolderName =			{ fg = mountain.suna },
 		NvimTreeEmptyFolderName =		{ fg = mountain.kesseki },
@@ -259,12 +275,18 @@ theme.loadPlugins = function()
 		LspDiagnosticsHint =			{ fg = mountain.kori },
 
 		-- BufferLine
-		BufferLineIndicatorSelected =	{ fg = mountain.yoru },
-		BufferLineFill =				{ bg = mountain.yoru },
+		BufferLineIndicatorSelected =		{ fg = mountain.yoru },
+		BufferLineFill =			{ bg = mountain.yoru },
 
 		-- Indent Blankline
 		IndentBlanklineChar =			{ fg = mountain.amagumo },
-		IndentBlanklineContextChar =	{ fg = mountain.amagumo },
+		IndentBlanklineContextChar =		{ fg = mountain.amagumo },
+
+		-- Neovim
+    		healthError = 				{ fg = mountain.ichigo },
+    		healthSuccess = 			{ fg = mountain.kusa },
+    		healthWarning = 			{ fg = mountain.yuyake },
+
 	}
 
 	return plugins
