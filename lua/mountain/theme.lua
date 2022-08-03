@@ -283,10 +283,14 @@ theme.loadPlugins = function()
 		IndentBlanklineContextChar =		{ fg = mountain.amagumo },
 
 		-- Gitsigns
-		GitSignsAdd = { fg = mountain.take },
-		GitSignsChange = { fg = mountain.chikyu },
-		GitSignsDelete = { fg = mountain.kaen },
+		GitSignsAdd = { fg = mountain.kusa },
+		GitSignsChange = { fg = mountain.suna },
+		GitSignsDelete = { fg = mountain.ichigo },
 
+		-- Neovim
+		healthError = { fg = mountain.ichigo },
+		healthSuccess = { fg = mountain.kusa },
+		healthWarning = { fg = mountain.yuyake },
 	}
 
 	return plugins
