@@ -282,10 +282,10 @@ theme.loadPlugins = function()
 		IndentBlanklineChar =			{ fg = mountain.amagumo },
 		IndentBlanklineContextChar =		{ fg = mountain.amagumo },
 
-		-- Neovim
-    		healthError = 				{ fg = mountain.ichigo },
-    		healthSuccess = 			{ fg = mountain.kusa },
-    		healthWarning = 			{ fg = mountain.yuyake },
+		-- Gitsigns
+		GitSignsAdd = { fg = mountain.take },
+		GitSignsChange = { fg = mountain.chikyu },
+		GitSignsDelete = { fg = mountain.kaen },
 
 	}
 
